@@ -2,9 +2,13 @@
  - main入口程序
  - 组合注解
  - 习惯优于配置
+ 
 ###自定义消息转换器
+
  - @Baen
+ 
 ###新增 springboot整和mybatis
+
  - @Mapper注解
  Mapper接口直接使用mapper注解
  
@@ -23,5 +27,5 @@
  spring.datasource.username=root
  spring.datasource.password=root
 
- 
+ ###新增 整合redis单机版
  
