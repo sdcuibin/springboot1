@@ -1,9 +1,9 @@
 package com.cuibusi.xspringdemo.service;
 
 import com.cuibusi.xspringdemo.bean.User;
-import com.cuibusi.xspringdemo.bean.UserExample;
 import com.cuibusi.xspringdemo.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 
@@ -19,8 +19,11 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserMapper userMapper;
-    @Override
+
+    //测试
+    @Cacheable(value = "findAll")
     public List<User> findAll() {
+        System.out.println("如果第二次打印此段文字，说明走了缓存，没有执行此方法");
         List<User> list = userMapper.findAll();
         return list;
     }
