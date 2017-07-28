@@ -7,7 +7,7 @@
 
  - @Baen
  
-###新增 springboot整和mybatis
+###新增 springboot整合mybatis
 
  - @Mapper注解
  Mapper接口直接使用mapper注解
@@ -28,4 +28,8 @@
  spring.datasource.password=root
 
  ###新增 整合redis单机版
+ 
+ ###整合freemarker
+ 
+ 
  

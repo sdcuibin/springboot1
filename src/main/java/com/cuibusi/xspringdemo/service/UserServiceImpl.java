@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserService {
     //测试
     @Cacheable(value = "findAll")
     public List<User> findAll() {
-        System.out.println("如果第二次打印此段文字，说明走了缓存，没有执行此方法");
+        System.out.println("如果第二次没有打印此段文字，说明走了缓存，没有执行此方法");
         List<User> list = userMapper.findAll();
         return list;
     }
